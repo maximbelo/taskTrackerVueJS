@@ -33,7 +33,13 @@ export default {
       {
         id: 2,
         text: "Grocery Shopping",
-        day: "March 21st at 2:30pm",
+        day: "March 3rd at 1:30pm",
+        reminder: false,
+      },
+      {
+        id: 3,
+        text: "Meeting at School",
+        day: "March 5th at 1:20pm",
         reminder: true,
       },
     ];
