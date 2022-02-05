@@ -2,9 +2,9 @@
   <header>
     <h1>{{ title }}</h1>
     <Button
-      text="Add Task"
-      color="green"
-      @toggle-add-task="$emit('toggle-add-task')"
+      :text="showAddTask ? 'Close' : 'Add Task'"
+      :color="showAddTask ? 'red' : 'green'"
+      @btn-click="$emit('toggle-add-task')"
     />
   </header>
 </template>
@@ -17,6 +17,7 @@ export default {
   // Props can be defined as an array or object -> If added as an object we define the type and we can also define a default value
   props: {
     title: String,
+    showAddTask: Boolean,
   },
   components: {
     Button,
